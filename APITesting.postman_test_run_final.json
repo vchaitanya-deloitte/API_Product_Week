@@ -1,0 +1,790 @@
+{
+	"id": "2d4ae45a-79d9-4711-94ea-7503ed4b9da8",
+	"name": "APITesting",
+	"timestamp": "2022-04-15T10:26:00.770Z",
+	"collection_id": "19950359-ac440e13-4d90-46d0-a6b1-d0efa175efa3",
+	"folder_id": "19950359-d336a22a-7826-4370-920d-64d86fe34a60",
+	"environment_id": "19950359-19c203b1-5abc-4520-9f38-c0465439c422",
+	"totalPass": 25,
+	"totalFail": 37,
+	"results": [
+		{
+			"id": "e3093bc9-8762-4e83-a1f5-9748bdec7aef",
+			"name": "To get a teacher by id",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/1",
+			"time": 358,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check for id": false,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Check for lastName": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for lastName": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				358
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check for id": false,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Check for lastName": false
+				}
+			]
+		},
+		{
+			"id": "6ebf7be7-efcd-4de8-bfad-beea453ae0f7",
+			"name": "To get all teachers",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 323,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				323
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "c313b5fd-ab2d-4efb-b956-51e2723e0197",
+			"name": "To create a teacher",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 239,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check for last name": true,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for last name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				239
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check for last name": true,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "71817a81-fae0-43af-8dd7-2cf7d82949fb",
+			"name": "To update a teacher",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 234,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "77c3b5a5-5b74-4509-9ee6-b6be4f6a84ce",
+			"name": "To delete a teacher",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/2",
+			"time": 234,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "81c676a8-c784-4895-b34e-344104c84ec0",
+			"name": "To get the teacher id which is not there in the list",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/25",
+			"time": 262,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check for id": false,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Check for lastName": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for lastName": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				262
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check for id": false,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Check for lastName": false
+				}
+			]
+		},
+		{
+			"id": "db653547-45aa-4896-87de-7778bd771e6a",
+			"name": "To get a teacher id by entering special character",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/@",
+			"time": 223,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Check for id": false,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Check for lastName": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for lastName": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				223
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Check for id": false,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Check for lastName": false
+				}
+			]
+		},
+		{
+			"id": "81b8fb7c-1165-47de-ad8c-3bbf378631de",
+			"name": "To get a teacher id by entering alphanumeric characters",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/abc1",
+			"time": 231,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Check for id": false,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Check for lastName": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for lastName": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				231
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Check for id": false,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Check for lastName": false
+				}
+			]
+		},
+		{
+			"id": "ab3c5fa1-f063-4bf5-ab9f-7347ad3a4594",
+			"name": "To get teacher id by having space between characters",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/a%20b%20c",
+			"time": 228,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Check for id": false,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Check for lastName": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for lastName": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				228
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Check for id": false,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Check for lastName": false
+				}
+			]
+		},
+		{
+			"id": "bdfabe57-503d-4342-b2f4-4bca590d5735",
+			"name": "To insert an id explicitly",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 245,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check for last name": true,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for last name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				245
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check for last name": true,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "a24fccdb-5088-45a4-84dc-d235d539cd27",
+			"name": "To insert id explicitly",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 247,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Check for last name": false,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for last name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				247
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Check for last name": false,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "31477e09-38ef-4ef5-9cc7-c4d0c0cc5229",
+			"name": "to insert a character as id",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 218,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Check for last name": false,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for last name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				218
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Check for last name": false,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "2c64a04d-220b-43b3-b656-3db4cc032972",
+			"name": "Enter null values in the body",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 221,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Check for last name": false,
+				"Check for first name": false,
+				"Response time is less than 500ms": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for last name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Check for first name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Check for last name": false,
+					"Check for first name": false,
+					"Response time is less than 500ms": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "94726d2a-d939-4adb-9957-db952433bbda",
+			"name": "Updating teacher data with invaild id",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 239,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				239
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "4f41ac07-218f-4407-a1e9-df1f02662f9d",
+			"name": "Updating teacher's first and last name by special characters",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/",
+			"time": 236,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				236
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "47f34654-da8e-4218-9aa3-49149ecf0623",
+			"name": "Deleting an id which is not there in the data",
+			"url": "https://gateway-graphqlteacherservice-urtjok3rza-wl.a.run.app/teachers/21",
+			"time": 274,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				274
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Response time is less than 500ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4012,
+	"collection": {
+		"requests": [
+			{
+				"id": "e3093bc9-8762-4e83-a1f5-9748bdec7aef",
+				"method": "GET"
+			},
+			{
+				"id": "6ebf7be7-efcd-4de8-bfad-beea453ae0f7",
+				"method": "GET"
+			},
+			{
+				"id": "c313b5fd-ab2d-4efb-b956-51e2723e0197",
+				"method": "POST"
+			},
+			{
+				"id": "71817a81-fae0-43af-8dd7-2cf7d82949fb",
+				"method": "PUT"
+			},
+			{
+				"id": "77c3b5a5-5b74-4509-9ee6-b6be4f6a84ce",
+				"method": "DELETE"
+			},
+			{
+				"id": "81c676a8-c784-4895-b34e-344104c84ec0",
+				"method": "GET"
+			},
+			{
+				"id": "db653547-45aa-4896-87de-7778bd771e6a",
+				"method": "GET"
+			},
+			{
+				"id": "81b8fb7c-1165-47de-ad8c-3bbf378631de",
+				"method": "GET"
+			},
+			{
+				"id": "ab3c5fa1-f063-4bf5-ab9f-7347ad3a4594",
+				"method": "GET"
+			},
+			{
+				"id": "bdfabe57-503d-4342-b2f4-4bca590d5735",
+				"method": "POST"
+			},
+			{
+				"id": "a24fccdb-5088-45a4-84dc-d235d539cd27",
+				"method": "POST"
+			},
+			{
+				"id": "31477e09-38ef-4ef5-9cc7-c4d0c0cc5229",
+				"method": "POST"
+			},
+			{
+				"id": "2c64a04d-220b-43b3-b656-3db4cc032972",
+				"method": "POST"
+			},
+			{
+				"id": "94726d2a-d939-4adb-9957-db952433bbda",
+				"method": "PUT"
+			},
+			{
+				"id": "4f41ac07-218f-4407-a1e9-df1f02662f9d",
+				"method": "PUT"
+			},
+			{
+				"id": "47f34654-da8e-4218-9aa3-49149ecf0623",
+				"method": "DELETE"
+			}
+		]
+	}
+}
